@@ -22,6 +22,9 @@ const nextConfig: NextConfig = {
   },
   // Exclude problematic modules from server-side bundling
   webpack: (config, { isServer }) => {
+    // AppKit SSR compatibility
+    config.externals.push("pino-pretty", "lokijs", "encoding");
+    
     if (!isServer) {
       config.resolve.fallback = {
         ...config.resolve.fallback,

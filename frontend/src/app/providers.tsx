@@ -1,33 +1,45 @@
 "use client";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { WagmiProvider } from "wagmi";
-import { RainbowKitProvider, darkTheme } from "@rainbow-me/rainbowkit";
-import { config } from "@/lib/config";
+import { WagmiProvider, type Config } from "wagmi";
+import { createAppKit } from "@reown/appkit/react";
+import { sepolia } from "@reown/appkit/networks";
+import { wagmiAdapter, projectId } from "@/lib/config";
 import { useState, type ReactNode } from "react";
 
-import "@rainbow-me/rainbowkit/styles.css";
+// App metadata
+const metadata = {
+  name: "ArtEpoch",
+  description: "FHE-Powered Art Year Guessing Game",
+  url: "https://art-epoch.vercel.app",
+  icons: ["https://art-epoch.vercel.app/icon.png"],
+};
+
+// Create AppKit modal
+createAppKit({
+  adapters: [wagmiAdapter],
+  projectId,
+  networks: [sepolia],
+  defaultNetwork: sepolia,
+  metadata,
+  features: {
+    analytics: true,
+  },
+  themeMode: "dark",
+  themeVariables: {
+    "--w3m-accent": "#C9A962",
+    "--w3m-border-radius-master": "2px",
+  },
+});
 
 export function Providers({ children }: { children: ReactNode }) {
   const [queryClient] = useState(() => new QueryClient());
 
   return (
-    <WagmiProvider config={config}>
+    <WagmiProvider config={wagmiAdapter.wagmiConfig as Config}>
       <QueryClientProvider client={queryClient}>
-        <RainbowKitProvider
-          theme={darkTheme({
-            accentColor: "#C9A962",
-            accentColorForeground: "#0A0A0A",
-            borderRadius: "medium",
-            fontStack: "system",
-          })}
-          modalSize="compact"
-          locale="en"
-        >
-          {children}
-        </RainbowKitProvider>
+        {children}
       </QueryClientProvider>
     </WagmiProvider>
   );
 }
-

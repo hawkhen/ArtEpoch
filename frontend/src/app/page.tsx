@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import { useAccount, useDisconnect } from "wagmi";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { useAppKit } from "@reown/appkit/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { GameScreen } from "@/components/GameScreen";
 import { FhevmStatus } from "@/components/FhevmStatus";
@@ -12,6 +12,7 @@ import artworksData from "@/data/artworks.json";
 export default function Home() {
   const { isConnected, address } = useAccount();
   const { disconnect } = useDisconnect();
+  const { open } = useAppKit();
   const [mounted, setMounted] = useState(false);
   const [showGame, setShowGame] = useState(false);
   const [showWalletMenu, setShowWalletMenu] = useState(false);
@@ -226,13 +227,9 @@ export default function Home() {
 
           {!isConnected ? (
             <div className="flex flex-col items-center gap-6 glass-panel p-10 rounded-xl relative z-10 border border-white/20">
-              <ConnectButton.Custom>
-                {({ openConnectModal }) => (
-                  <button onClick={openConnectModal} className="btn-museum text-xl min-w-[240px]">
-                    Connect Wallet
-                  </button>
-                )}
-              </ConnectButton.Custom>
+              <button onClick={() => open()} className="btn-museum text-xl min-w-[240px]">
+                Connect Wallet
+              </button>
             </div>
           ) : (
             <div className="flex flex-col items-center relative z-10">

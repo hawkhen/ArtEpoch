@@ -1,6 +1,6 @@
-import { http, createConfig } from "wagmi";
-import { sepolia } from "wagmi/chains";
-import { getDefaultConfig } from "@rainbow-me/rainbowkit";
+import { http } from "wagmi";
+import { sepolia } from "@reown/appkit/networks";
+import { WagmiAdapter } from "@reown/appkit-adapter-wagmi";
 
 // Contract address on Sepolia (v3 - unlimited guesses)
 export const CONTRACT_ADDRESS = "0x555D3Ed18c687EAf09B3087Cc847EEE33cf87208";
@@ -8,16 +8,23 @@ export const CONTRACT_ADDRESS = "0x555D3Ed18c687EAf09B3087Cc847EEE33cf87208";
 // Sepolia RPC - Alchemy endpoint
 export const SEPOLIA_RPC = "https://eth-sepolia.g.alchemy.com/v2/xeMfJRSGpIGq5WiFz-bEiHoG6DGrZnAr";
 
-// RainbowKit config with Reown (WalletConnect) Project ID
-export const config = getDefaultConfig({
-  appName: "ArtEpoch",
-  projectId: "42a5c65f3530bd77a4076f1296beb2bb", // Reown Project ID from dashboard.reown.com
-  chains: [sepolia],
+// Reown Project ID from dashboard.reown.com
+export const projectId = "42a5c65f3530bd77a4076f1296beb2bb";
+
+// Networks
+export const networks = [sepolia];
+
+// Wagmi Adapter for Reown AppKit
+export const wagmiAdapter = new WagmiAdapter({
+  networks,
+  projectId,
   transports: {
     [sepolia.id]: http(SEPOLIA_RPC),
   },
-  ssr: true,
 });
+
+// Export wagmi config from adapter
+export const config = wagmiAdapter.wagmiConfig;
 
 // Contract ABI - v3 with unlimited guesses
 export const ART_EPOCH_ABI = [

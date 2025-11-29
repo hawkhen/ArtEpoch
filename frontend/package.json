@@ -9,7 +9,8 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@rainbow-me/rainbowkit": "^2.2.9",
+    "@reown/appkit": "^1.8.14",
+    "@reown/appkit-adapter-wagmi": "^1.8.14",
     "@tanstack/react-query": "^5.90.11",
     "@zama-fhe/relayer-sdk": "0.3.0-6",
     "fhevmjs": "^0.6.2",
