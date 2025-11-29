@@ -104,7 +104,7 @@ function getLatestGuessResult(uint256 artworkId, address player) external view r
 
 ```bash
 # Clone the repository
-git clone https://github.com/passer-byzhang/ArtEpoch.git
+git clone https://github.com/hawkhen/ArtEpoch.git
 cd ArtEpoch
 
 # Install frontend dependencies
