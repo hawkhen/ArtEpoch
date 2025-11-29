@@ -1,0 +1,183 @@
+@import "tailwindcss";
+
+:root {
+  /* Vibrant Palette */
+  --color-bg: #050505;
+  --color-text: #FFFFFF;
+  --color-text-muted: #E0E0E0;
+  --color-accent: #FF3366; /* Vibrant Pink */
+  --color-accent-2: #00CCFF; /* Cyan */
+  --color-accent-3: #FFCC00; /* Yellow */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+/* Elegant scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--color-accent), var(--color-accent-2));
+  border-radius: 4px;
+}
+
+/* Animations */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-marquee {
+  animation: marquee 160s linear infinite; /* Extremely Slow */
+  width: max-content;
+  display: flex;
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.animate-marquee-reverse {
+  animation: marquee-reverse 180s linear infinite; /* Extremely Slow */
+  width: max-content;
+  display: flex;
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes rainbow-glow {
+  0% { box-shadow: 0 0 20px rgba(255, 51, 102, 0.3); }
+  33% { box-shadow: 0 0 20px rgba(0, 204, 255, 0.3); }
+  66% { box-shadow: 0 0 20px rgba(255, 204, 0, 0.3); }
+  100% { box-shadow: 0 0 20px rgba(255, 51, 102, 0.3); }
+}
+
+.animate-glow {
+  animation: rainbow-glow 4s linear infinite;
+}
+
+/* Artwork Frame */
+.artwork-frame {
+  position: relative;
+  padding: 8px;
+  background: #fff; /* White frame for contrast */
+  border-radius: 2px;
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Glass Effect */
+.glass-panel {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Iridescent Text - Refined Opalescent */
+.text-vibrant-gradient {
+  background: linear-gradient(
+    to right,
+    #FFFFFF 20%,
+    #FFB3C1 35%,   /* Pale Rose (Muted) */
+    #99DDFF 50%,   /* Soft Sky Blue */
+    #FFE066 65%,   /* Soft Gold */
+    #FFFFFF 80%
+  );
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 12s linear infinite; /* Slow & Eternal */
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Modern Button */
+.btn-museum {
+  position: relative;
+  padding: 16px 40px;
+  font-family: var(--font-playfair), serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.btn-museum:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn-museum:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Spinner */
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Input Override */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

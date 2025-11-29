@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "title": "Wheat Field with Cypresses",
+    "artist": "Vincent van Gogh",
+    "year": 1889,
+    "type": "Painting",
+    "imageUrl": "/artworks/1.jpg",
+    "source": "Met",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "title": "Self-Portrait with a Straw Hat (obverse: The Potato Peeler)",
+    "artist": "Vincent van Gogh",
+    "year": 1887,
+    "type": "Painting",
+    "imageUrl": "/artworks/2.jpg",
+    "source": "Met",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "title": "L'Arlésienne: Madame Joseph-Michel Ginoux (Marie Julien, 184",
+    "artist": "Vincent van Gogh",
+    "year": 1888,
+    "type": "Painting",
+    "imageUrl": "/artworks/3.jpg",
+    "source": "Met",
+    "difficulty": "easy"
+  },
+  {
+    "id": 4,
+    "title": "Irises",
+    "artist": "Vincent van Gogh",
+    "year": 1890,
+    "type": "Painting",
+    "imageUrl": "/artworks/4.jpg",
+    "source": "Met",
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "title": "Sunflowers",
+    "artist": "Vincent van Gogh",
+    "year": 1887,
+    "type": "Painting",
+    "imageUrl": "/artworks/5.jpg",
+    "source": "Met",
+    "difficulty": "easy"
+  },
+  {
+    "id": 6,
+    "title": "The Flowering Orchard",
+    "artist": "Vincent van Gogh",
+    "year": 1888,
+    "type": "Painting",
+    "imageUrl": "/artworks/6.jpg",
+    "source": "Met",
+    "difficulty": "easy"
+  },
+  {
+    "id": 7,
+    "title": "The Potato Peeler (reverse: Self-Portrait with a Straw Hat)",
+    "artist": "Vincent van Gogh",
+    "year": 1885,
+    "type": "Painting",
+    "imageUrl": "/artworks/7.jpg",
+    "source": "Met",
+    "difficulty": "easy"
+  },
+  {
+    "id": 8,
+    "title": "The Visitation",
+    "artist": "Unknown",
+    "year": 1505,
+    "type": "Statuette group",
+    "imageUrl": "/artworks/8.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  },
+  {
+    "id": 9,
+    "title": "Still Life with Apples and a Pot of Primroses",
+    "artist": "Paul Cézanne",
+    "year": 1885,
+    "type": "Painting",
+    "imageUrl": "/artworks/9.jpg",
+    "source": "Met",
+    "difficulty": "easy"
+  },
+  {
+    "id": 10,
+    "title": "The Death of Socrates",
+    "artist": "Jacques Louis David",
+    "year": 1787,
+    "type": "Painting",
+    "imageUrl": "/artworks/10.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "title": "The Third-Class Carriage",
+    "artist": "Honoré Daumier",
+    "year": 1864,
+    "type": "Painting",
+    "imageUrl": "/artworks/11.jpg",
+    "source": "Met",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "title": "Antoine Laurent Lavoisier (1743–1794) and Marie Anne Lavoisi",
+    "artist": "Jacques Louis David",
+    "year": 1788,
+    "type": "Painting",
+    "imageUrl": "/artworks/12.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  },
+  {
+    "id": 13,
+    "title": "Ia Orana Maria (Hail Mary)",
+    "artist": "Paul Gauguin",
+    "year": 1891,
+    "type": "Painting",
+    "imageUrl": "/artworks/13.jpg",
+    "source": "Met",
+    "difficulty": "easy"
+  },
+  {
+    "id": 14,
+    "title": "Head of the Virgin",
+    "artist": "Emmanuel Tzanès",
+    "year": 1636,
+    "type": "Painting",
+    "imageUrl": "/artworks/14.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  },
+  {
+    "id": 15,
+    "title": "View of Toledo",
+    "artist": "El Greco (Domenikos Theotokopoulos)",
+    "year": 1599,
+    "type": "Painting",
+    "imageUrl": "/artworks/15.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  },
+  {
+    "id": 16,
+    "title": "Madame Roulin and Her Baby",
+    "artist": "Vincent van Gogh",
+    "year": 1888,
+    "type": "Painting",
+    "imageUrl": "/artworks/16.jpg",
+    "source": "Met",
+    "difficulty": "easy"
+  },
+  {
+    "id": 17,
+    "title": "Shabti of Djedkhonsuefankh",
+    "artist": "Unknown",
+    "year": -1070,
+    "type": "Shabti, Djedkhonsuefankh",
+    "imageUrl": "/artworks/17.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "title": "The Temple of Dendur",
+    "artist": "Unknown",
+    "year": -10,
+    "type": "Temple, Dendur",
+    "imageUrl": "/artworks/18.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  },
+  {
+    "id": 19,
+    "title": "Terracotta stand",
+    "artist": "Ergotimos",
+    "year": -570,
+    "type": "Stand",
+    "imageUrl": "/artworks/19.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "title": "Marble head and torso of Athena",
+    "artist": "Roman",
+    "year": 1,
+    "type": "Statue of Athena, upper part",
+    "imageUrl": "/artworks/20.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  },
+  {
+    "id": 21,
+    "title": "Mirror Back with Birds and Animals in Repoussé",
+    "artist": "China",
+    "year": 700,
+    "type": "Mirror back",
+    "imageUrl": "/artworks/21.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  },
+  {
+    "id": 22,
+    "title": "The Forest in Winter at Sunset",
+    "artist": "Théodore Rousseau",
+    "year": 1846,
+    "type": "Painting",
+    "imageUrl": "/artworks/22.jpg",
+    "source": "Met",
+    "difficulty": "medium"
+  },
+  {
+    "id": 23,
+    "title": "Joan of Arc",
+    "artist": "Jules Bastien-Lepage",
+    "year": 1879,
+    "type": "Painting",
+    "imageUrl": "/artworks/23.jpg",
+    "source": "Met",
+    "difficulty": "medium"
+  },
+  {
+    "id": 24,
+    "title": "Henri-Gabriel Ibels (1867–1936)",
+    "artist": "Henri de Toulouse-Lautrec",
+    "year": 1892,
+    "type": "Drawing",
+    "imageUrl": "/artworks/24.jpg",
+    "source": "Met",
+    "difficulty": "easy"
+  },
+  {
+    "id": 25,
+    "title": "Self-Portrait with Two Pupils, Marie Gabrielle Capet (1761–1",
+    "artist": "Adélaïde Labille-Guiard",
+    "year": 1785,
+    "type": "Painting",
+    "imageUrl": "/artworks/25.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  },
+  {
+    "id": 26,
+    "title": "Oedipus and the Sphinx",
+    "artist": "Gustave Moreau",
+    "year": 1864,
+    "type": "Painting",
+    "imageUrl": "/artworks/26.jpg",
+    "source": "Met",
+    "difficulty": "medium"
+  },
+  {
+    "id": 27,
+    "title": "The Card Players",
+    "artist": "Paul Cézanne",
+    "year": 1890,
+    "type": "Painting",
+    "imageUrl": "/artworks/27.jpg",
+    "source": "Met",
+    "difficulty": "easy"
+  },
+  {
+    "id": 28,
+    "title": "Roses",
+    "artist": "Vincent van Gogh",
+    "year": 1890,
+    "type": "Painting",
+    "imageUrl": "/artworks/28.jpg",
+    "source": "Met",
+    "difficulty": "easy"
+  },
+  {
+    "id": 29,
+    "title": "First Steps, after Millet",
+    "artist": "Vincent van Gogh",
+    "year": 1890,
+    "type": "Painting",
+    "imageUrl": "/artworks/29.jpg",
+    "source": "Met",
+    "difficulty": "easy"
+  },
+  {
+    "id": 30,
+    "title": "The Pink Dress (Albertie-Marguerite Carré, later Madame Ferd",
+    "artist": "Berthe Morisot",
+    "year": 1865,
+    "type": "Painting",
+    "imageUrl": "/artworks/30.jpg",
+    "source": "Met",
+    "difficulty": "medium"
+  },
+  {
+    "id": 31,
+    "title": "Nini in the Garden (Nini Lopez)",
+    "artist": "Auguste Renoir",
+    "year": 1876,
+    "type": "Painting",
+    "imageUrl": "/artworks/31.jpg",
+    "source": "Met",
+    "difficulty": "medium"
+  },
+  {
+    "id": 32,
+    "title": "Madame Cézanne (Hortense Fiquet, 1850–1922) in a Red Dress",
+    "artist": "Paul Cézanne",
+    "year": 1888,
+    "type": "Painting",
+    "imageUrl": "/artworks/32.jpg",
+    "source": "Met",
+    "difficulty": "easy"
+  },
+  {
+    "id": 33,
+    "title": "Mont Sainte-Victoire and the Viaduct of the Arc River Valley",
+    "artist": "Paul Cézanne",
+    "year": 1882,
+    "type": "Painting",
+    "imageUrl": "/artworks/33.jpg",
+    "source": "Met",
+    "difficulty": "easy"
+  },
+  {
+    "id": 34,
+    "title": "Mont Sainte-Victoire",
+    "artist": "Paul Cézanne",
+    "year": 1902,
+    "type": "Painting",
+    "imageUrl": "/artworks/34.jpg",
+    "source": "Met",
+    "difficulty": "easy"
+  },
+  {
+    "id": 35,
+    "title": "Erasmus of Rotterdam",
+    "artist": "Hans Holbein the Younger",
+    "year": 1527,
+    "type": "Painting",
+    "imageUrl": "/artworks/35.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  },
+  {
+    "id": 36,
+    "title": "Portrait of a Man",
+    "artist": "Monogrammist IS",
+    "year": 1621,
+    "type": "Painting, miniature",
+    "imageUrl": "/artworks/36.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  },
+  {
+    "id": 37,
+    "title": "The Adoration of the Shepherds",
+    "artist": "Andrea Mantegna",
+    "year": 1450,
+    "type": "Painting",
+    "imageUrl": "/artworks/37.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  },
+  {
+    "id": 38,
+    "title": "Madame Georges Charpentier (Marguerite-Louise Lemonnier, 184",
+    "artist": "Auguste Renoir",
+    "year": 1878,
+    "type": "Painting",
+    "imageUrl": "/artworks/38.jpg",
+    "source": "Met",
+    "difficulty": "medium"
+  },
+  {
+    "id": 39,
+    "title": "Landscapes with poems",
+    "artist": "Gong Xian",
+    "year": 1688,
+    "type": "Album",
+    "imageUrl": "/artworks/39.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  },
+  {
+    "id": 40,
+    "title": "Tripod Plate",
+    "artist": "Maya",
+    "year": 800,
+    "type": "Plate",
+    "imageUrl": "/artworks/40.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  },
+  {
+    "id": 41,
+    "title": "Tapestry with Dragons and Flowers",
+    "artist": "Eastern Central Asia",
+    "year": 1000,
+    "type": "Panel",
+    "imageUrl": "/artworks/41.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  },
+  {
+    "id": 42,
+    "title": "The Adoration of the Shepherds",
+    "artist": "El Greco (Domenikos Theotokopoulos)",
+    "year": 1605,
+    "type": "Painting",
+    "imageUrl": "/artworks/42.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  },
+  {
+    "id": 43,
+    "title": "Reclining Nude",
+    "artist": "Auguste Renoir",
+    "year": 1883,
+    "type": "Painting",
+    "imageUrl": "/artworks/43.jpg",
+    "source": "Met",
+    "difficulty": "easy"
+  },
+  {
+    "id": 44,
+    "title": "The Abduction of the Sabine Women",
+    "artist": "Nicolas Poussin",
+    "year": 1633,
+    "type": "Painting",
+    "imageUrl": "/artworks/44.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  },
+  {
+    "id": 45,
+    "title": "The Harvesters",
+    "artist": "Pieter Bruegel the Elder",
+    "year": 1565,
+    "type": "Painting",
+    "imageUrl": "/artworks/45.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  },
+  {
+    "id": 46,
+    "title": "La Berceuse (Woman Rocking a Cradle; Augustine-Alix Pellicot",
+    "artist": "Vincent van Gogh",
+    "year": 1889,
+    "type": "Painting",
+    "imageUrl": "/artworks/46.jpg",
+    "source": "Met",
+    "difficulty": "easy"
+  },
+  {
+    "id": 47,
+    "title": "Olive Trees",
+    "artist": "Vincent van Gogh",
+    "year": 1853,
+    "type": "Painting",
+    "imageUrl": "/artworks/47.jpg",
+    "source": "Met",
+    "difficulty": "medium"
+  },
+  {
+    "id": 48,
+    "title": "Marine: The Waterspout",
+    "artist": "Gustave Courbet",
+    "year": 1870,
+    "type": "Painting",
+    "imageUrl": "/artworks/48.jpg",
+    "source": "Met",
+    "difficulty": "medium"
+  },
+  {
+    "id": 49,
+    "title": "The Laundress",
+    "artist": "Honoré Daumier",
+    "year": 1863,
+    "type": "Painting",
+    "imageUrl": "/artworks/49.jpg",
+    "source": "Met",
+    "difficulty": "medium"
+  },
+  {
+    "id": 50,
+    "title": "Young Woman with a Lute",
+    "artist": "Johannes Vermeer",
+    "year": 1662,
+    "type": "Painting",
+    "imageUrl": "/artworks/50.jpg",
+    "source": "Met",
+    "difficulty": "hard"
+  }
+]
