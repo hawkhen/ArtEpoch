@@ -26,14 +26,14 @@ export function FhevmStatus({ className = "" }: FhevmStatusProps) {
       try {
         // Check if we can read from the contract (proves chain connection works)
         if (publicClient) {
-          const roundId = await publicClient.readContract({
+          const totalArtworks = await publicClient.readContract({
             address: CONTRACT_ADDRESS as `0x${string}`,
             abi: ART_EPOCH_ABI,
-            functionName: "currentRoundId",
+            functionName: "totalArtworks",
           });
 
           setStatus("ready");
-          setDetails(`Contract connected • Round: ${roundId.toString()}`);
+          setDetails(`Contract connected • ${totalArtworks.toString()} artworks`);
         } else {
           // No public client yet, but that's okay
           setStatus("ready");
