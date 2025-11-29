@@ -24,6 +24,8 @@ createAppKit({
   metadata,
   features: {
     analytics: true,
+    email: false,
+    socials: false,
   },
   themeMode: "dark",
   themeVariables: {
