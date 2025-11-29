@@ -3,18 +3,6 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   // Add empty turbopack config to silence warnings
   turbopack: {},
-  // Enable COOP/COEP headers for WASM threading support
-  async headers() {
-    return [
-      {
-        source: "/(.*)",
-        headers: [
-          { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
-          { key: "Cross-Origin-Embedder-Policy", value: "require-corp" },
-        ],
-      },
-    ];
-  },
   // Configure image domains
   images: {
     remotePatterns: [
