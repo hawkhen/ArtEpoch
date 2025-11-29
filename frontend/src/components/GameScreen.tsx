@@ -177,17 +177,17 @@ export function GameScreen({ onExit }: GameScreenProps) {
 
       // Create signer adapter for fheClient
       const signer = {
-        getAddress: async () => address,
+        getAddress: async (): Promise<string> => address,
         signTypedData: async (
-          domain: Record<string, unknown>,
-          types: Record<string, unknown[]>,
-          message: Record<string, unknown>
-        ) => {
+          domain: unknown,
+          types: unknown,
+          message: unknown
+        ): Promise<string> => {
           return walletClient.signTypedData({
             domain: domain as { name: string; version: string; chainId: number; verifyingContract: `0x${string}` },
             types: types as Record<string, { name: string; type: string }[]>,
-            primaryType: Object.keys(types).find((k) => k !== "EIP712Domain") || "Reencrypt",
-            message,
+            primaryType: Object.keys(types as Record<string, unknown>).find((k) => k !== "EIP712Domain") || "Reencrypt",
+            message: message as Record<string, unknown>,
           });
         },
       };
