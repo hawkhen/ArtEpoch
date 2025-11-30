@@ -6,7 +6,7 @@ import { useAppKit } from "@reown/appkit/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { GameScreen } from "@/components/GameScreen";
 import { FhevmStatus } from "@/components/FhevmStatus";
-import { Palette, Copy, LogOut, Check } from "lucide-react";
+import { Palette, Copy, LogOut, Check, Github } from "lucide-react";
 import artworksData from "@/data/artworks.json";
 
 export default function Home() {
@@ -77,6 +77,17 @@ export default function Home() {
       {/* Header Bar - Fixed Position */}
       <div className="fixed top-4 left-4 right-4 z-50 flex justify-between items-center">
         <FhevmStatus />
+        <div className="flex items-center gap-3">
+          {/* GitHub Link */}
+          <a
+            href="https://github.com/hawkhen/ArtEpoch"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 text-white/60 hover:text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 rounded-full transition-all"
+            title="View on GitHub"
+          >
+            <Github className="w-5 h-5" />
+          </a>
         {isConnected && (
           <div className="relative">
             <button
@@ -114,6 +125,7 @@ export default function Home() {
             </AnimatePresence>
           </div>
         )}
+        </div>
       </div>
 
       {/* Dynamic Background: Vibrant River of Art */}
