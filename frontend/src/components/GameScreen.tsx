@@ -192,33 +192,21 @@ export function GameScreen({ onExit }: GameScreenProps) {
         },
       };
 
-      // Decrypt using fheClient with 10s timeout for video recording
-      let decryptedDiff: number;
-      try {
-        const decryptPromise = fheClient.decrypt(
-          [{ handle: encryptedResult as string, contractAddress: CONTRACT_ADDRESS }],
-          signer
-        );
-        
-        const timeoutPromise = new Promise<never>((_, reject) => 
-          setTimeout(() => reject(new Error("DECRYPT_TIMEOUT")), 10000)
-        );
-        
-        const decryptedResults = await Promise.race([decryptPromise, timeoutPromise]);
-        decryptedDiff = Number(Object.values(decryptedResults)[0]);
-        console.log("[GameScreen] Decrypted difference:", decryptedDiff);
-      } catch (decryptError) {
-        // Timeout or relayer error - use local calculation for video demo
-        console.warn("[GameScreen] Decrypt timeout/error, using local calculation for demo");
-        decryptedDiff = Math.abs(year - gameState.currentArtwork!.year);
-        console.log("[GameScreen] Local calculated difference:", decryptedDiff);
-      }
+      // Decrypt using fheClient
+      const decryptedResults = await fheClient.decrypt(
+        [{ handle: encryptedResult as string, contractAddress: CONTRACT_ADDRESS }],
+        signer
+      );
+
+      // Get the decrypted value
+      const decryptedDiff = Object.values(decryptedResults)[0];
+      console.log("[GameScreen] Decrypted difference:", decryptedDiff);
 
       // Step 4: Show result
       setGameState((prev) => ({
         ...prev,
         status: "result",
-        result: decryptedDiff,
+        result: Number(decryptedDiff),
       }));
     } catch (error) {
       console.error("[GameScreen] FHE Error:", error);
