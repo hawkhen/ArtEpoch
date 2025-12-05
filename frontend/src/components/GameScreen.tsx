@@ -131,7 +131,7 @@ export function GameScreen({ onExit }: GameScreenProps) {
       console.log("[GameScreen] Initializing FHE SDK...");
       
       await fheClient.init();
-      console.log("[GameScreen] Encrypting year:", year);
+      console.log("[GameScreen] Encrypting guess...");
 
       const encrypted = await fheClient.encrypt16(year, CONTRACT_ADDRESS, address);
       const handle = fheClient.getHandleHex(encrypted);
