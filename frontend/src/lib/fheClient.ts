@@ -243,7 +243,7 @@ class FheClient {
     const input = instance.createEncryptedInput(contractAddress, userAddress);
     input.add16(BigInt(value));
     const encrypted = await input.encrypt();
-    console.log("[FheClient] Encrypted value:", value);
+    console.log("[FheClient] Value encrypted successfully");
     return encrypted;
   }
 
